@@ -1,0 +1,209 @@
+
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: black;
+  }
+  
+  /* Change the color of links on hover */
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+  
+  /* Add a color to the active/current link */
+nav a.active {
+  background-color: #04AA6D;
+  color: black;
+}
+
+nav h1 {
+  padding-top: 35px;
+  margin: 0 auto;
+  width: 15%;
+  color: white;
+  background-color: black;
+}
+  
+nav h1 img {
+  background-color: transparent;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin-top: 5%;
+}
+   
+
+#cf img {
+  position:absolute;
+  margin-left: 150%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+  
+#cf img.bottom {
+  height: 200px;
+  width: 200px;
+}
+
+#cf img.top {
+  height: 250px;
+  width: 200px;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+  
+#cf img.middle {
+  height: 250px;
+  width: 200px;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+.screen img {
+  box-sizing: content-box;
+  padding: 5px;
+  margin: 0;
+  width: 40%;
+  left: 25%;
+  height: 416px;
+  width: 744px;
+  background-color: transparent;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  margin-top: 5%;
+}
+
+.screen img.donart:hover{
+  opacity:0;
+  cursor: pointer;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 35%;
+}
+
+
+ .container h1 p {
+  text-align: center;
+}
+
+.container q em {
+  font-size: 20px;
+  text-align: center;
+}
+
+.activities {
+  width: 20%;
+  display: block;
+  margin-left: 25%;
+  width: 50%;
+}
+  
+.activities ul {
+  text-align: center; 
+}
+
+.activities li {
+  text-align: justify;
+}
+
+.goals img {
+  position: absolute;
+  margin-left: auto;
+  width: 1000px;
+  height: 600px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.goals img.img-back:hover{
+  opacity:0;
+  cursor: pointer;
+}
+  
+.icons {
+  margin-top: 20%;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: auto;
+  height: 100%;
+}
+
+.links {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  color: rgb(178, 137, 253);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.links:hover {
+  background-color: white;
+  transform: scale(1.3);
+}
+
